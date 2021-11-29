@@ -375,7 +375,7 @@ def uranai(input_text):
     else:
       return 'わかった、ありがとう！またね～'
 
-    return uranai(input_text)
+    return output_text
 
 def start():
   run_chat(chat=uranai)
