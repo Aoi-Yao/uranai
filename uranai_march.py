@@ -240,7 +240,7 @@ def run_chat(chat = chat, start='よかったらまーちの相性占いやっ�
 
 
 def birth(x): #誕生日情報の抽出
-  pattern = r'\d\d\d\d/(\d\d?)/(\d\d?)|昭和|平成|令和\d\d?/(\d\d?)/(\d\d?)|\d\d\d\d年(\d\d?)月(\d\d?)日|(\d\d?)/(\d\d?)|(\d\d?)月(\d\d?)日|昭和|平成|令和\d\d?年(\d\d?)月(\d\d?)日|(\d\d?)(\d\d?)|(\d\d?)／(\d\d?)|\d\d\d\d-(\d\d?)-(\d\d?)|(\d\d?)-(\d\d?)'
+  pattern = r'\d\d\d\d/(\d\d?)/(\d\d?)|昭和|平成|令和\d\d?/(\d\d?)/(\d\d?)|\d\d\d\d年(\d\d?)月(\d\d?)日|(\d\d?)/(\d\d?)|(\d\d?)月(\d\d?)日|昭和|平成|令和\d\d?年(\d\d?)月(\d\d?)日|(\d\d?)(\d\d?)|(\d\d?)／(\d\d?)|\d\d\d\d-(\d\d?)-(\d\d?)|(\d\d?)-(\d\d?)|\d\d\d\d(\d\d?)(\d\d?)'
   pattern = re.compile(pattern)
   result_1 = pattern.findall(x)
   result_1 = list(result_1[0])
